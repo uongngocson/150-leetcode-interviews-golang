@@ -25,7 +25,7 @@ func merge(nums1 []int, m int, nums2 []int, n int) {
 		} else {
 
 			nums1[k] = nums2[j]
-			j--
+			j-- 
 		}
 
 		k--
@@ -39,13 +39,14 @@ func merge(nums1 []int, m int, nums2 []int, n int) {
 		k--
 	}
 }
-
+ 
 func main() {
 	nums1 := []int{1, 2, 3, 0, 0, 0}
 	m := 3
 	nums2 := []int{2, 5, 6}
 	n := 3
-
 	merge(nums1, m, nums2, n)
 	fmt.Println(nums1) // [1 2 2 3 5 6]
 }
+
+
